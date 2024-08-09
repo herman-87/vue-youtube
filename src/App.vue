@@ -1,20 +1,15 @@
 <template>
-  <header>
-    <nav>
-      <RouterLink to="/">
-        <img src="/youtube.png" alt="Youtube logo">
-      </RouterLink>
-      <form>
-        <input type="text" placeholder="Search...">
-      </form>
-      <font-awesome-icon icon="magnifying-glass" />
-    </nav>
-  </header>
+  <HeaderNavbar />
   <RouterView />
 </template>
 
 <script>
+import HeaderNavbar from './components/HeaderNavbar.vue';
+
 export default {
   name: 'App',
+  components: {
+    HeaderNavbar
+  }
 }
 </script>
